@@ -21,3 +21,10 @@ document.getElementById("js-function-apply-max").innerHTML = Math.max.apply(null
 // This about equal to Math.max(numbers[0], ...)
 // or Math.max(5, 6, ...)
 document.getElementById("js-function-apply-min").innerHTML = Math.min.apply(null, numbers);
+
+var greet = function(name1, name2) {
+    var message = this.toUpperCase() + ' ' + name1 + ' y ' + name2; 
+    document.getElementById("js-function-apply-message").innerHTML = message;
+}
+var names = ['Tom', 'Jerry'];
+greet.apply('hola', names);

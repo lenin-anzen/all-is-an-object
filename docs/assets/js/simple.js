@@ -15,8 +15,8 @@ document.getElementById("js-simple-object-method").innerHTML = person.fullName()
 // Functions
 function PersonFn(firstName, lastName) {
     // Arguments passed to the constructor
-    console.log('arguments:', arguments);
-    document.getElementById("js-object-arguments").innerHTML = arguments.length;
+    console.log('arguments', arguments);
+    document.getElementById("js-object-arguments").innerHTML = JSON.stringify(arguments);
     // Constructor
     this.firstName = firstName;  
     this.lastName = lastName;
@@ -27,6 +27,8 @@ function PersonFn(firstName, lastName) {
 }
 var person2 = new PersonFn("", "Meza");
 person2.changeName("Lenin");
+console.log('person2.firstName', person2.firstName);
+console.log('person2.lastName', person2.lastName);
 document.getElementById("js-object-first-name").innerHTML = person2.firstName;
 document.getElementById("js-object-last-name").innerHTML = person2.lastName;
 // Add method to an existing prototype
