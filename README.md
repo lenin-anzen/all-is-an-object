@@ -1,2 +1,3 @@
-# all-is-an-object
-Todo en JS es un objeto
+# All is an object
+Todo en Javascript es un objeto
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="Demo">
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript / ECMAScript 5</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+  <body>
+    <h1>Javascript - ECMAScript 5</h1>
+    <h2>All in Javascript is an Object!</h2>
+    <hr>
+    <h3><a href="https://www.w3schools.com/js/js_object_definition.asp" title="JS Objects">JS Objects</a></h3>
+    <p>Simple</p>
+    <p><strong>person.firstname:</strong> <span id="js-simple-object-first-name"></span></p>
+    <p><strong>person.lastName:</strong> <span id="js-simple-object-last-name"></span></p>
+    <p><strong>person.fullName():</strong> <span id="js-simple-object-method"></span></p>
+    <p>Constructor</p>
+    <p><strong>person2 arguments:</strong> <span id="js-object-arguments"></span></p>
+    <p><strong>person2.firstname:</strong> <span id="js-object-first-name"></span></p>
+    <p><strong>person2.lastName:</strong> <span id="js-object-last-name"></span></p>
+    <p>Method</p>
+    <p><strong>person2.fullName():</strong> <span id="js-object-full-name"></span></p>
+    <p>Prototype</p>
+    <p><strong>person2.nationality:</strong> <span id="js-object-nationality"></span></p>
+    <hr>
+    <h3><a href="https://www.w3schools.com/js/js_function_definition.asp" title="JS Functions">JS Functions</a></h3>
+    <p><strong>Call:</strong> <span id="js-function-call"></span></p>
+    <p><strong>Apply:</strong> <span id="js-function-apply"></span></p>
+    <p><strong>Apply / Math.max:</strong> <span id="js-function-apply-max"></span></p>
+    <p><strong>Apply / Math.min:</strong> <span id="js-function-apply-min"></span></p>
+    <hr>
+    <h3><a href="https://www.w3schools.com/js/js_function_closures.asp" title="JS Closures">JS Closures</a></h3>
+    <p><strong>Count:</strong> <span id="js-closure"></span></p>
+    <hr>
+    <h3><a href="https://www.w3schools.com/js/js_json_intro.asp" title="JavaScript Object Notation">JSON</a></h3>
+    <p><strong>stringify:</strong> <span id="js-json-stringify"></span></p>
+    <p><strong>key/value:</strong> <span id="js-json-key-value"></span></p>
+    <p><strong>delete:</strong> <span id="js-json-deleted"></span></p>
+    <p><strong>parse date:</strong> <span id="js-json-parse"></span></p>
+    <p><strong>eval:</strong> <span id="js-json-eval"></span></p>
+    <hr>
+    <h3>AngularJS</h3>
+    <div ng-controller="AppController">
+      <input type="text" ng-model="yourName" placeholder="Ingresa un nombre">
+      <p><strong>yourName:</strong> {{ yourName }}</p>
+      <p><strong>father.getFullName():</strong> {{ father.getFullName() }}</p>
+      <p><strong>mother.getFullName():</strong> {{ mother.getFullName() }}</p>
+    </div>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype">JavaScript reference &raquo; Standard built-in objects &raquo; Object &raquo; Object.prototype</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">JavaScript reference &raquo; Standard built-in objects &raquo; Function &raquo; Function.prototype.apply()</a></p>
+    <script src="assets/js/simple.js"></script>
+    <script src="assets/js/call.js"></script>
+    <script src="assets/js/apply.js"></script>
+    <script src="assets/js/closure2.js"></script>
+    <script src="assets/js/json.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
