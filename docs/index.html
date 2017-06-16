@@ -36,9 +36,42 @@
                 <h3 class="panel-title"><a href="https://www.w3schools.com/js/js_object_definition.asp" title="JS Objects">JS Objects</a></h3>
             </div>
             <div class="panel-body">
+                <p>Formas de crear un objeto:</p>
                 <div class="row">
                     <div class="col md-4 col-sm-4">
-                        <p>Simple</p>
+                        <p><b>Literales</b></p>
+                        <code>var user1 = {
+    name: 'Lenin',
+    lastName: 'Meza',
+    address: {
+        country: 'Mexico',
+        zc: '01000'
+    }
+};</code>
+                    </div>
+                    <div class="col md-4 col-sm-4">
+                        <p><b>Palabra clave new</b></p>
+                        <code>var user2 = new Object();
+user2.name = 'Lenin';
+user2.lastName = 'Lenin';
+user2.address = new Object();
+user2.address.country = 'Mexico';
+user2.address.zc = '01000';</code>
+                    </div>
+                    <div class="col md-4 col-sm-4">
+                        <p><b>Función Constructor</b></p>
+                        <code>var Person = function(name, lastName, address) {
+    this.name = name;
+    this.lastName = lastName;
+    this.address = address;
+}
+var user3 = new Person("Lenin", "Meza", {country: "Mexico", zp: "01000"});</code>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col md-4 col-sm-4">
+                        <p><b>Acceder a las propiedades:</b></p>
                         <p><strong>person.first:</strong> <span id="js-simple-object-first-name"></span></p>
                         <p><strong>person.last:</strong> <span id="js-simple-object-last-name"></span></p>
                         <p><strong>person.full():</strong> <span id="js-simple-object-method"></span></p>
@@ -239,6 +272,7 @@ parsed.func();</code>
         </div>
     </div>
 
+    <script src="assets/js/object-literals.js"></script>
     <script src="assets/js/simple.js"></script>
     <script src="assets/js/call.js"></script>
     <script src="assets/js/apply.js"></script>
