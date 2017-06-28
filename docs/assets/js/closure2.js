@@ -1,16 +1,16 @@
 'use strict';
 
-var count = (function() {
-    var x = 0;
-    var inc = function() {
+let count = (function() {
+    let x = 0;
+    let inc = function() {
         return x++;
-    }
-    var dec = function() {
+    };
+    let dec = function() {
         return x--;
-    }
-    var getCount = function() {
+    };
+    let getCount = function() {
         return x;
-    }
+    };
     return {
         inc: inc,
         dec: dec,
@@ -21,9 +21,9 @@ var count = (function() {
 console.log(count);
 console.log(count.inc());
 console.log(count.inc());
-document.getElementById("js-closure-1").innerHTML = count.getCount();
+document.getElementById('js-closure-1').innerHTML = count.getCount();
 console.log(count.getCount());
 console.log(count.dec());
 console.log(count.getCount());
 
-document.getElementById("js-closure-2").innerHTML = count.getCount();
+document.getElementById('js-closure-2').innerHTML = count.getCount();
